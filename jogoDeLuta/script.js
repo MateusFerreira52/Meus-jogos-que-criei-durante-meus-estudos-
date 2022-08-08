@@ -152,28 +152,6 @@ class Fighter {
     }
   
 
-
-    // collision(position){
-    //     if(position.x + 300 <= obst1.position.x + obst1.scale.larg &&
-    //         position.x + 390 >= obst1.position.x &&
-    //         position.y + 250 <= obst1.position.y + obst1.scale.alt &&
-    //         position.y + 370 >= obst1.position.y 
-    //         ){
-
-    //             this.puloAtual = 0
-    //             this.platform = true
-
-    //             return true
-
-    //         }else{
-    //             this.platform = false
-    //             return false
-    //         }
-
-    //     }
-        
-
-
     atualizaSprites(){
         this.offset.x = this.spriteAtual * 200
 
@@ -185,14 +163,14 @@ class Fighter {
 
         
 
-        // if(keys.space.pressed){
+       
             this.offset.x = this.spriteAtualJump * 200
 
             this.spriteAtualJump++
             if(this.spriteAtualJump >= this.imagemAtual.framesMax){
                 this.spriteAtualJump = 0
             }
-        // }
+        
 
         if(this.fallCondition){
             this.offset.x = this.spriteAtualFall * 200
@@ -250,42 +228,14 @@ class Fighter {
 
             this.position.y = 300
         }
-            
-        // if(this.collision(this.position)){
-        //     if(this.position.y + 371 >= obst1.position.y){
-        //         this.fallCondition = false
-   
-        //         this.jump = true
-        //         this.gravidade = 0
-        //         this.position.y = obst1.position.y - 371
-        //     }
-        // }else{
-        //     this.gravidade = 1
-        // }
-
         
-        // if(this.position.y <= obst1.position.y + 70){
-        //     if(this.position.x + 300 <= obst1.position.x + obst1.scale.larg &&
-        //         this.position.x + 390 >= obst1.position.x &&
-        //         this.position.y + 220 <= obst1.position.y + obst1.scale.alt &&
-        //         this.position.y + 370 >= obst1.position.y)
-        //         {
-        //             setTimeout(() => {
-        //                 this.fallCondition = true
-        //             }, 300)
-                    
-        //         this.position.y = obst1.position.y + obst1.scale.alt - 220
-        //     }
-        // }      
 
 }
         
    move(){
     if(keys.a.pressed){
         this.position.x-= this.velX
-        // if(this.collision(this.position)){
-        //     this.position.x+= this.velX
-        // }
+     
         if(this.position.x <= tela.x - 250){
             this.position.x = tela.x - 250
         }
@@ -294,9 +244,7 @@ class Fighter {
 
     if(keys.d.pressed){
         this.position.x+= this.velX
-        // if(this.collision(this.position)){       
-        //     this.position.x-= this.velX
-        // }
+    
         if(this.position.x >= tela.largura - 400  ){
             this.position.x = tela.largura - 400
         }
@@ -367,11 +315,6 @@ class Fighter {
                         takenHitPlayer = true
 
                         this.damageSound()
-                        // ctx.drawImage(jogador.sprites.takeHit.image, jogador.offset.x, jogador.offset.y,
-                        //      jogador.sprites.takeHit.image.width / jogador.sprites.takeHit.framesMax,
-                        //      jogador.sprites.takeHit.image.height,
-                        //      jogador.position.x, jogador.position.y, jogador.scaleLarg, jogador.scaleAlt
-                        //      )
 
                         gerenciaVidaPlayer()
                     
@@ -419,7 +362,7 @@ class Fighter {
         damageSound.setAttributeNode(att2)
         document.body.append(damageSound)
         let audio = document.querySelectorAll('audio')
-        // audio[1].play()
+     
         document.getElementById('damageSound'+this.soundIndice).play()
         this.soundIndice++
         if(audio.length >= 3){
@@ -442,7 +385,7 @@ class obstaculo {
     desenhaObstaculo(){
         ctx.fillStyle = 'red'
         ctx.fillRect(this.position.x, this.position.y, this.scale.larg, this.scale.alt)
-        // console.log(jogador.position.x)
+
     }
 
 
@@ -623,7 +566,6 @@ function animate(){
     fisica()
     desenharPlayer()
     desenharCpu()
-    animateColisao()
 
   
     if(jogo){    
@@ -697,28 +639,6 @@ function desenharPlayer(){
     
     }
     
-    // if(keys.f.pressed && !takenHitPlayer && !jogador.death){
-    //     jogador.desenhaAttack()
-
-    //     numHitsPlayer++
-    //     if(numHitsPlayer % 20 === 0){
-    //     jogador.attackPlayer()
-    //     }
-  
-    // }
-   
-
-    // if(keys.space.pressed & !keys.f.pressed &&
-    //      !jogador.fallCondition && !takenHitPlayer && !jogador.death){
-    //     jogador.pular()
-    //     jogador.desenhaPulo()
-    // }
-    
-
-
-    // if(jogador.fallCondition && !keys.f.pressed && !takenHitPlayer && !jogador.death){
-    //     jogador.desenhaFall()
-    // }
     
     if(hpPlayer.value <= 0){
         
@@ -751,13 +671,13 @@ function desenharCpu(){
         cpu.imagemAtual.src = cpu.sprites.takeHit.imageSrc
         cpu.imagemAtual.framesMax = cpu.sprites.takeHit.framesMax
         cpu.desenhaSprite()
-        // cpu.desenhaHit()
     }
+        
 
     if(hpCpu.value <= 0){
         cpu.death = true
         menuWin.style.display = 'inline'
-        // cpu.deathfunc()
+      
 
         cpu.imagemAtual.src = cpu.sprites.death.imageSrc
         cpu.imagemAtual.framesMax = cpu.sprites.death.framesMax
@@ -797,13 +717,12 @@ function inteligenciaCpu(){
     if(!takenHitCpu && cpuRun && !cpu.death){
         cpuAttack = false
         cpu.position.x -= cpu.velCpu // correndo pra esquerda
-        // if(!cpuAttack){
-        // cpu.desenhaSpriteRun()
+ 
             cpu.imagemAtual.src = cpu.sprites.run.imageSrc
             cpu.imagemAtual.framesMax = cpu.sprites.run.framesMax
             cpu.desenhaSprite()
 
-        // }
+      
 
     } 
 
@@ -832,7 +751,7 @@ function inteligenciaCpu(){
             cpu.imagemAtual.src = cpu.sprites.attack.imageSrc
             cpu.imagemAtual.framesMax = cpu.sprites.attack.framesMax
             cpu.desenhaSprite()
-            // cpu.desenhaAttack()
+         
         }
 
         if(numHitsCpu % 30 === 0 && !takenHitCpu){
@@ -924,9 +843,9 @@ window.addEventListener('keydown', (event) => {
 
     }
     if(tecla === 'f'){
-        // if(numHitsPlayer % 2 === 0 && jogo){
+       
         jogador.soundAttack()
-        // }
+   
         keys.f.pressed = true
     }
 
@@ -979,11 +898,7 @@ window.addEventListener('keydown', (event) => {
         if(tecla === 'Space'){
             keys.space.pressed = true
             jogador.jump = true
-     
-                // jogador.pular()
-            
-            // jogador.dx = false
-            // jogador.efeitoSonoro()
+
         }
         
 })
@@ -1010,3 +925,4 @@ btnStart.addEventListener('click', () => {
     
                   
 })
+
