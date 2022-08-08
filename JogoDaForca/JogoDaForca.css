@@ -1,0 +1,71 @@
+.display{
+    font-size: 60px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+    
+
+
+}
+
+section{
+    display: flex;
+}
+
+#botao{
+position: absolute;
+right: 0px;
+top: 0px;
+
+}
+
+#jogPala{
+    text-transform: uppercase;
+}
+
+
+
+.header-container{
+    display: flex;
+  
+    
+}
+
+.letras{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#letraJogada{
+    transform: translateX(20px);
+    font-size: 25px;
+    color: green;
+
+}
+
+.boneco{
+    width: 400px;
+    transform: translate(810px, -190px);
+    display: none;
+    
+}
+
+div > img{
+    position: absolute;
+
+}
+
+#forca{
+    position: absolute;
+    bottom: 250px;
+    left: 750px;
+    
+}
+
+#forca > img{
+    width: 200px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        #canvas{
+            /* transform: translateX(200px); */
+        }
+    </style>
+
+    <div class="disabled" id="container-battle">
+
+
+       <div class="hp d-flex justify-content-around">
+            <div id="player">
+                <h5 id="levelPlayer"> </h5>
+                <progress id="playerBar" value="1000" max="1000"></progress>
+                <h3 id="playerHp"> </h3>
+                <!-- <img class="w-25" src="./sprites/red-pokemon.png" alt="player">   -->
+                <h5 id="attacksPlayer"></h5>
+            </div>
+            <div id="enemy">
+                <h5 id="levelCpu">Level: 20</h5>
+                <progress id="cpuBar" value="1000" max="1000"> </progress>
+                <h3 id="cpuHp"></h3>
+                <!-- <img class="w-50" src="./sprites/mewtwoWithBackg.png" alt=""> -->
+                <h5 id="attacksCpu"></h5>
+            </div>
+       </div>
+   
+        <div id="div" class="container-fluid p-3 d-flex flex-column align-items-start">
+            <h3 id="choose-pokemon">Escolha um pokémon</h3>
+            <button id="button1" class="btn btn-primary"> </button>
+            <button id="button2" class="btn btn-primary"> </button>
+            <button id="button3" class="btn btn-primary"> </button>
+            <button id="button4" class="btn btn-primary"> </button>
+
+            <button id="catch" class="btn btn-success">Capturar</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <canvas class="" id="canvas" width="1300" height="1000"></canvas>
+
+    <audio id="song" src="./songs/13 Road to Viridian City- Leaving Pallet Town).mp3"></audio>
+    <audio id="battleSong" src="./songs/Pokemon FireRedLeafGreen Music- Trainer Battle.mp3"></audio>
+    <audio id="vicSong" src="./songs/Victory Trainer Theme - Pokémon FireRed  LeafGreen.mp3"></audio>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="battle.js"></script>
+</body>
+</html>

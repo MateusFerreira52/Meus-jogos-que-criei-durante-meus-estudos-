@@ -1,0 +1,52 @@
+.hp{
+    position: absolute;
+    left: 300px;
+    top: 10px;
+}
+
+#enemy{
+    margin-left: 600px
+}
+
+#playerHp{
+    transform: translateX(10px);
+}
+
+#cpuHp{
+    transform: translateX(10px);
+}
+
+.remove{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#level{
+    margin-left: 40px;
+
+}
+
+/* body{
+    overflow: hidden;
+} */
+
+#div{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    background-color: gray;
+    width: 200px;
+    text-align: center;
+}
+
+.size{
+    width: 100px;
+}
+
+.btn{
+    margin-top: 5px;
+    border: 3px solid black;
+}

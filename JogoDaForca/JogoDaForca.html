@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JogoDaForca.css">
+</head>
+<body onload="sorteiaPalavra()">
+    
+
+
+     <header class="header-container" >
+        <p class="letras" id="letrajogada2">Letras jogadas:  </p>
+        <p class="letras" id="letraJogada"></p>
+    </header>   
+
+  <section id="pai">
+    <div class="display" id="display1"></div>
+    <div class="display" id="display2"></div>
+    <div class="display" id="display3"></div>
+    <div class="display" id="display4"></div>
+    <div class="display" id="display5"></div>
+    <div class="display" id="display7"></div>
+    <div class="display" id="display8"></div>
+    <div class="display" id="display9"></div>
+    <div class="display" id="display10"></div>
+    <div class="display" id="display11"></div>
+    <div class="display" id="display12"></div>
+    <div class="display" id="display13"></div>
+    <div class="display" id="display14"></div>
+    <div class="display" id="display15"></div>
+</section>  
+
+
+    <input type="text" id="jogPala" maxlength="1" style="width:50px; height: 70px;
+        font-size: 50px; text-align: center; margin-top: 25px; ">
+    <button onclick="jogar()" >Jogar</button>
+
+  
+    <figure id="forca">
+        <img src="/jogo da forca img/forca.png" alt="">
+    </figure>
+
+    <div>
+        <img>
+        <img id="a" class="boneco" src="/jogo da forca img/cabeça.png" alt="">
+        <img id="b" class="boneco" src="/jogo da forca img/corpo.png" alt="">
+        <img class="boneco" src="/jogo da forca img/braço_direito.png" alt="">
+        <img class="boneco" src="/jogo da forca img/braço_esquerdo.png" alt="">
+        <img class="boneco" src="/jogo da forca img/perna_direita.png" alt="">
+        <img class="boneco" src="/jogo da forca img/perna_esquerda.png" alt="">
+        <img class="boneco" src="/jogo da forca img/olhos.png" alt="">
+
+    </div>
+
+    <script src="JogoDaForca.js"></script>
+</body>
+</html>

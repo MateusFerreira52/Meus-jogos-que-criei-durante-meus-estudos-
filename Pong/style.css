@@ -1,0 +1,15 @@
+body{
+    overflow: hidden;
+}
+
+#displayPlayer1{
+    position: absolute;
+    color: white;
+    left: 30px;
+}
+
+#displayPlayer2{
+    position: absolute;
+    color: white;
+    right: 40px;
+}

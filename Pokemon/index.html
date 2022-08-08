@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button id="inicio" onclick="iniciar()">Começar batalha</button>
+
+    <div id="display"></div>
+    <label class="mostra" for="">Escolha um ataque</label><br><br>
+    <button class="mostra" id="botaoQ">Quickattack</button><br><br>
+    <button class="mostra" id="botaoF">Fire</button><br><br>
+    <button class="mostra"id="botaoB">Icebeam</button><br><br>
+    <button class="mostra" id="botaoT">Thunder</button><br><br>
+    <button class="mostra" id="BotaoCura">Potions</button><br><br>
+    <button class="mostra" id="botaoVeneno">Veneno</button><br>
+    <div id="display2" style="margin-top:30px ;"></div><br>
+    
+        <div class="playerCont">
+            <h4 id="displayPlayerVida"></h4>
+            <h4 id="displayAtaquesPlayer"></h4>
+            <img id="red" src="/imagens/red-pokemon.png" alt="">
+            <h4 id="critico" style="display:inline ;"></h4>
+        </div>
+
+        <div class="cpuCont" >
+            <h4 id="displayCPUVida"></h4>
+            <h4 id="displayAtaquesCPU"></h4>
+            <img id="mewtwo" src="/imagens/mewtwoWithBackg.png" alt="Mewtwo">
+            <img src="/imagens/zapdos.png" id="zapdos" alt="">
+        </div>
+
+
+
+    <audio src="/Audios/super efetivo.super efetivo.super efetivo.mp3" id="audio"></audio>
+    <audio src="/Audios/Pokemon FireRedLeafGreen Music- Trainer Battle.mp3" id="audio2"></audio>
+    <audio src="/Audios/Victory Trainer Theme - Pokémon FireRed  LeafGreen.mp3" id="audioVitoria"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

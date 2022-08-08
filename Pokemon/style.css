@@ -1,0 +1,84 @@
+
+
+body{
+    background-image: url(/imagens/Pokemon-Topaz-Battle-Backgrounds.png);
+    
+}
+
+#quemAtacou{
+    position: absolute;
+    left: 450px;
+    bottom: 300px;
+   
+}
+
+#inicio{
+    height: 50px;
+}
+
+ #displayAtaquesPlayer{
+    position: absolute;
+    left: 250px;
+    bottom: 530px;
+
+
+
+} 
+
+#displayAtaquesCPU{
+    position: absolute;
+    left: 900px;
+    bottom: 530px;
+}
+
+
+
+
+#displayCPUVida{
+    position: absolute;
+    font-size: 25px;
+    left: 900px;
+    bottom: 540px;
+
+}
+
+ #displayPlayerVida{
+
+    position: absolute;
+    font-size: 25px;
+    left: 250px;
+    bottom: 540px;
+} 
+
+#mewtwo{
+    transition: 0.1s;
+    position: absolute;
+    left: 930px;
+    bottom:300px ;
+    width: 220px;
+    display: none;
+
+}
+
+#red{
+    transition: 0.1s;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    left: 250px;
+    bottom: 270px;
+    display: none;
+}
+
+#zapdos{
+    transition: 0.1s;
+    position: absolute;
+    left: 900px;
+    bottom: 300px;
+    width: 300px;
+    display: none;
+}
+
+
+
+

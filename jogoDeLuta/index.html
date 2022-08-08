@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow:hidden ;">
+
+
+
+    <div class="menu">
+        <h1 id="iniciar">Começar jogo</h1>
+    </div>    
+
+    <div class="menu2">
+        <h1 id="menuWin">You win!</h1>
+        <h1 id="menuLose">You lose!</h1>
+    </div>
+
+
+  
+
+    <audio id="song" src="./Audios/Awesome VGM 02- Ninja Gaiden(NES)- Boss Battle.mp3"></audio>
+    <canvas id="canvas" width="1500" height="780"></canvas>
+
+    
+    <audio id="victorySound" src="./Audios/You Win.mp3"></audio>
+    <audio id="deathSound" src="./Audios/ninja gainen death sound.mp3"></audio>
+
+    <div id="container-hp"> 
+        <h3>90</h3>
+        <progress value="300" max="300" id="hp-player"></progress>
+        <progress value="300" max="300" id="hp-player2"></progress>
+    </div>
+
+   
+   
+
+    
+
+    <script src="script.js"></script>
+    <!-- <script src="class.js"></script> -->
+</body>
+</html>

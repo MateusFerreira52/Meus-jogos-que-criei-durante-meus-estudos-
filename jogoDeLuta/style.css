@@ -1,0 +1,101 @@
+#container-hp{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    bottom: 750px; 
+    left: 700px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    display: none;
+    
+}
+
+.menu{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+
+#menuWin{
+    display: none;
+    position: absolute;
+    font-size: 100px;
+    left: 550px;
+    top: 200px;
+    color: lawngreen
+}
+
+#menuLose{
+    display: none;
+    position: absolute;
+    font-size: 100px;
+    left: 550px;
+    top: 200px;
+    color: red;
+}
+
+
+body{
+    position: relative;
+    left: 100px;
+    background-color: black;
+}
+
+#canvas{
+    background-image: url("./Images/background\ fight\ game.gif");
+    background-size: 1700px;
+    background-position: -200px;
+
+}
+
+h3{
+    position: absolute;
+    left: 32px
+}
+
+#hp-player{
+    position: absolute;
+    left: -500px;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: lawngreen
+}
+
+#hp-player::-webkit-progress-value{
+    background-color: lawngreen;
+    border-radius: 50px;
+}
+#hp-player::-webkit-progress-bar{
+    border-radius: 50px;
+}
+
+
+
+#hp-player2{
+    position: absolute;
+    left: 100px;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: lawngreen;
+}
+
+#hp-player2::-webkit-progress-value{
+    background-color: lawngreen;
+    border-radius: 50px;
+}
+#hp-player2::-webkit-progress-bar{
+    border-radius: 50px;
+}
+
+

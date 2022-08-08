@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+#canvas{
+    border: 1px white solid;
+    transform: translateX(450px);
+
+}
+
+h3, h2{
+    color: white;
+}
+
+#gameover{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    left: 570px;
+    top: 230px;
+    display: none;
+}
+
+h1{
+    color: white;
+}

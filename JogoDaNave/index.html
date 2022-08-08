@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da nave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- <img src="./imgs/nave_jog.gif" alt=""> -->
+
+
+            <progress id="life" max="200" value="200"></progress>
+            <h3 id="lifeDisplay">Sua vida: 200</h3>
+
+            <progress id="enemyLife" max="500" value="500"></progress>
+            <h3 id="enemyLifeDisplay">Vida do inimigo: 500</h3>
+
+
+            <h1 class="objectiveDisplay">Derrote o boss para vencer</h1>
+            <h2 id="scoreDisplay">Score: </h2>
+            <h3 class="power">Power up: Off</h3>
+            <h3 class="special">Special: On</h3>
+
+            <h2 class="difficult">Difficult: <span> Very easy </span></h2>
+
+            <canvas id="canvas" width="1250" height="590"></canvas>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
